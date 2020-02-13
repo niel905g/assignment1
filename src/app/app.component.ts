@@ -11,9 +11,12 @@ import { AdvertisementService } from './advertisement.service';
    <h2>{{subtitle}}</h2>
   <products></products>
   <advertisements></advertisements>
+  <button class="btn btn-primary">Submit</button>
   `,
   providers: [ProductService, AdvertisementService]
 })
+
+
 export class AppComponent {
   title = 'My First Angular App!'; subtitle = 'My Second Angular App!'; imageUrl = "https://www.w3schools.com/html/pic_mountain.jpg";
 }
