@@ -7,11 +7,14 @@ import { AdvertisementService } from './advertisement.service';
   selector: 'app-root',
   template:
    `<h1>{{title}}</h1>
+   <img src="{{imageUrl}}"/>
+   <h2>{{subtitle}}</h2>
   <products></products>
   <advertisements></advertisements>
   `,
   providers: [ProductService, AdvertisementService]
 })
 export class AppComponent {
-  title = 'My Second Angular App!';
+  title = 'My First Angular App!'; subtitle = 'My Second Angular App!'; imageUrl = "https://www.w3schools.com/html/pic_mountain.jpg";
 }
+

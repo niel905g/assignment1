@@ -9,7 +9,7 @@ import { AdvertisementsComponent } from './advertisements.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ProductsComponent, AdvertisementsComponent,
+    AppComponent, ProductsComponent, AdvertisementsComponent
   ],
   imports: [
     BrowserModule
