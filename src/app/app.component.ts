@@ -5,7 +5,9 @@ import { AdvertisementService } from './advertisement.service';
 @Component({
   selector: 'app-root',
   template:
-   `<h1>{{title}}</h1>
+  `
+  <div class="container-fluid">
+   <h1>{{title}}</h1>
    <img src="{{imageUrl}}"/>
    <h2>{{subtitle}}</h2>
   <rating></rating>
@@ -19,7 +21,7 @@ import { AdvertisementService } from './advertisement.service';
   <div>
   <button (click)="onClickMe($event)" class="btn btn-danger"
   [class.disabled]="!isValid">Danger</button>
-  </div>
+  </div></div>
   `,
   providers: [ProductService, AdvertisementService]
 })
