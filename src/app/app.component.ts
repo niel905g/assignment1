@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductService } from './product.service';
 import { AdvertisementService } from './advertisement.service';
+import { SaleService } from './sale.service';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { AdvertisementService } from './advertisement.service';
   <rating></rating>
   <products></products>
   <advertisements></advertisements>
+  <sales></sales>
   <div>
   <button (click)="onClickMe($event)" class="btn btn-primary btn-lg"
   [class.disabled]="!isValid">Submit</button>
@@ -23,7 +25,7 @@ import { AdvertisementService } from './advertisement.service';
   [class.disabled]="!isValid">Danger</button>
   </div></div>
   `,
-  providers: [ProductService, AdvertisementService]
+  providers: [ProductService, AdvertisementService, SaleService]
 })
 
 export class AppComponent {

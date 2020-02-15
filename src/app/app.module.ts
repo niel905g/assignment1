@@ -6,11 +6,12 @@ import { RatingComponent } from './rating.component';
 import { AdvertisementsComponent } from './advertisements.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SalesComponent } from './sales.component';
 
 @NgModule({
   declarations: [
     AppComponent, ProductsComponent, AdvertisementsComponent,
-    RatingComponent
+    RatingComponent, SalesComponent
   ],
   imports: [
     BrowserModule,

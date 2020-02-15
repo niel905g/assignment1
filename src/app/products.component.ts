@@ -12,7 +12,7 @@ import { ProductService } from './product.service';
   `
   })
 
-export class ProductsComponent{
+export class ProductsComponent {
   products;
 
   constructor(productService: ProductService){
