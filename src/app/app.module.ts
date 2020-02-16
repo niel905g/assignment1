@@ -7,11 +7,13 @@ import { AdvertisementsComponent } from './advertisements.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SalesComponent } from './sales.component';
-
+import { ProductComponent } from './product.component';
+import { ProductService } from './product.service';
 @NgModule({
   declarations: [
     AppComponent, ProductsComponent, AdvertisementsComponent,
-    RatingComponent, SalesComponent
+    RatingComponent, SalesComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

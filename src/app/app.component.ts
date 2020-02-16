@@ -7,11 +7,10 @@ import { SaleService } from './sale.service';
   selector: 'app-root',
   template:
   `
-  <div class="container-fluid">
+  <div class="container">
    <h1>{{title}}</h1>
    <img src="{{imageUrl}}"/>
    <h2>{{subtitle}}</h2>
-  <rating></rating>
   <products></products>
   <advertisements></advertisements>
   <sales></sales>
@@ -23,18 +22,19 @@ import { SaleService } from './sale.service';
   <div>
   <button (click)="onClickMe($event)" class="btn btn-danger"
   [class.disabled]="!isValid">Danger</button>
-  </div></div>
+  </div>
+  </div>
   `,
   providers: [ProductService, AdvertisementService, SaleService]
 })
 
 export class AppComponent {
-  // tslint:disable-next-line: max-line-length
+   //tslint:disable-next-line: max-line-length
   title = 'My First Angular App!';
   subtitle = 'My Second Angular App!';
   imageUrl = 'https://www.w3schools.com/html/pic_mountain.jpg';
   isValid = true;
-  onClickMe($event) {console.log('Watch out!', $event);
+  onClickMe($event) {console.log('Clicked', $event);
   }
 }
 
