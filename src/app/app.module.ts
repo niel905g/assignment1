@@ -8,12 +8,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SalesComponent } from './sales.component';
 import { ProductComponent } from './product.component';
-import { ProductService } from './product.service';
+import { TruncatePipe } from './truncate.pipe';
+import { JumboTronComponent } from './jumbotron.component';
+
 @NgModule({
   declarations: [
     AppComponent, ProductsComponent, AdvertisementsComponent,
     RatingComponent, SalesComponent,
-    ProductComponent
+    ProductComponent, TruncatePipe,
+    JumboTronComponent
   ],
   imports: [
     BrowserModule,

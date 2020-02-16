@@ -13,7 +13,7 @@ import { Component, Input } from '@angular/core';
               <h4 class="media-heading">
                   {{ data.productName }}
               </h4>
-              {{ data.releasedDate | date }}
+              {{ data.releasedDate | date: "dd/MM/yy" }}
               <rating
                   [rating-value]="data.rating"
                   [numOfReviews]="data.numOfReviews">
@@ -27,7 +27,7 @@ import { Component, Input } from '@angular/core';
               *ngSwitchCase="5">Excellent</div><div
               *ngSwitchDefault>Not Rated</div>
               <br>
-              {{ data.description }}
+              {{ data.description | truncate: 50 }}
           </div>
       </div>
   `,

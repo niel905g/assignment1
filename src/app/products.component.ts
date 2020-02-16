@@ -9,7 +9,7 @@ import { ProductService } from './product.service';
     No products to display
     </div>
     <ng-template #loading>
-    <div *ngIf=products.length > 0">
+    <div *ngIf="products.length > 0">
     <div *ngFor="let product of products">
     <product [data]="product">
     </product>
